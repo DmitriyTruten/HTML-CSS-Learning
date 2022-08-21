@@ -1,0 +1,28 @@
+.left-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.hamburger-menu {
+    height: 24px;
+    margin: 24px 24px;
+}
+.youtube-logo {
+    height: 20px;
+}
+
+
+
+.whole-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 15px;
+    padding: 30px;
+    background-color: rgb(195, 195, 195);
+}
+.video-container {
+    background-color: lightpink;
+    height: 153px;
+}

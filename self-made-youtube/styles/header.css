@@ -1,0 +1,24 @@
+.header-top-section {
+    position: fixed;
+    height: 56px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: white;
+    border-bottom-color: gray;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    display: flex;
+    flex-direction: row;
+}
+.header-bottom-section {
+    position: fixed;
+    height: 56px;
+    top: 57px;
+    left: 0px;
+    right: 0px;
+    background-color: white;
+    border-bottom-color: gray;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
