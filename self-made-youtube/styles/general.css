@@ -2,5 +2,6 @@ body {
     height: 2000px;
     padding-top: 100px;
     padding-left: 56px;
-    
+    background-color: white;
+    font-family: Roboto, Arial;
 }
