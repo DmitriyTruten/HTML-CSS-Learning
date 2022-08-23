@@ -2,12 +2,51 @@
 .whole-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 15px;
-    row-gap: 15px;
-    padding: 30px;
+    column-gap: 16px;
+    row-gap: 40px;
+    padding: 31px;
     background-color: white
 }
 .video-container {
-    background-color: lightpink;
-    height: 153px;
+    cursor: pointer;
+}
+
+.video-title {
+    line-height: 20px;
+}
+
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.video-title-text {
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 2px;
+}
+
+.undertitle {
+    margin-top: 8px;
+}
+
+.undertitle-text {
+    font-size: 12px;
+    color: rgb(104, 104, 104);
+    padding-left: 2px;
+    line-height: 15px;
+    margin-top: 3px;
+}
+
+.thumbnail {
+    width: 100%;
+}
+
+.channel-picture {
+    padding-top: 10px;
+    width: 36px;
+}
+
+.channel-img {
+    border-radius: 18px;
 }
