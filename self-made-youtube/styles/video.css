@@ -6,6 +6,13 @@
   padding: 31px;
   background-color: white;
 }
+
+.video-link,
+.video-link:visited {
+  text-decoration: none;
+  color: black;
+}
+
 .video-container {
   cursor: pointer;
 }
