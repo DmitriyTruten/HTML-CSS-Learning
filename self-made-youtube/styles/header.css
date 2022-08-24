@@ -69,6 +69,7 @@
 .search-bar:focus {
   border-style: solid;
   border-width: 1px;
+  border-color: blue;
 }
 
 ::placeholder {
@@ -177,10 +178,16 @@
   border: 1px solid rgb(216, 216, 216);
   color: rgb(39, 39, 39);
   cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cloud:hover {
+  background-color: rgb(230, 230, 230);
 }
 
 .active,
-.cloud:hover {
+.active:hover {
   background-color: black;
   color: white;
 }
+
