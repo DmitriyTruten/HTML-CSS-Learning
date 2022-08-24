@@ -19,8 +19,11 @@
 <body>
 	<div class="header-top-section">
 		<div class="left-section">
-			<img class="hamburger-menu" src="icons/hamburger-menu.svg" />
+			<button class="hamburger-menu-button">
+				<img class="hamburger-menu" src="icons/hamburger-menu.svg" />
+			</button>
 			<img class="youtube-logo" src="icons/youtube-logo.svg" alt="">
+			<p class="UA">UA</p>
 		</div>
 		<div class="middle-section">
 			<input class="search-bar" type="text" placeholder="Введите запрос">
@@ -88,8 +91,8 @@
 		</div>
 	</div>
 
-	<div class="header-bottom-section">
-		<button class="cloud">Все</button>
+	<div id="underheader" class="header-bottom-section">
+		<button class="cloud active">Все</button>
 		<button class="cloud">Видеоигры</button>
 		<button class="cloud">Музыка</button>
 		<button class="cloud">Сейчас в эфире</button>
@@ -101,10 +104,28 @@
 		<button class="cloud">Просмотрено</button>
 	</div>
 
+	<script>
+		// Add active class to the current button (highlight it)
+		var header = document.getElementById("underheader");
+		var btns = header.getElementsByClassName("cloud");
+		for (var i = 0; i < btns.length; i++) {
+			btns[i].addEventListener("click", function() {
+			var current = document.getElementsByClassName("active");
+			current[0].className = current[0].className.replace(" active", "");
+			this.className += " active";
+			});
+		}
+		</script>
+		
+
 	<div class="whole-container">
 		<div class="video-container">
 			<div class="thumbnail-row">
 				<img id="img" draggable="false" class="thumbnail" alt="" src="https://i.ytimg.com/vi/vnleZexvgtw/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&amp;rs=AOn4CLBtCYYCPoAO5iy6IFOOvQ1dGl5s5g">
+				<div class="jam-preview">
+					<span class="play-icon">&#9654;</span> 
+					<p class="jam-preview-text">ВОСПРОИЗВЕСТИ ВСЕ</p> 
+				</div>
 			</div>
 			<div class="jam-video-info-grid">
 				<div class="video-title">
@@ -119,6 +140,8 @@
 		<div class="video-container">
 			<div class="thumbnail-row">
 				<img id="img" draggable="false" class="thumbnail" alt="" src="https://i.ytimg.com/vi/Q1kHG842HoI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLCg6DBuhDmALpKQFAcbfK0wJs6DDA">
+				<div class="video-timer">54:28</div>
+				<div class="preview">Если убрать указатель, предпросмотр прекратится</div>
 			</div>
 			<div class="video-info-grid">
 				<div class="channel-picture">
@@ -132,6 +155,7 @@
 						<p class="undertitle-text">SuperSimpleDev</p> 
 						<p class="undertitle-text">26 тыс. просмотров &#8226; 1 год назад</p> 
 					</div>
+					
 				</div>
 			</div>
 		</div>
@@ -139,6 +163,10 @@
 		<div class="video-container">
 			<div class="thumbnail-row">
 				<img id="img" draggable="false" class="thumbnail" alt="" src="https://i.ytimg.com/vi/u01upDJgX_g/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&amp;rs=AOn4CLD1q9r39EUrIVA_Jc9KVkFSsBqx0A">
+				<div class="jam-preview">
+					<span class="play-icon">&#9654;</span> 
+					<p class="jam-preview-text">ВОСПРОИЗВЕСТИ ВСЕ</p> 
+				</div>
 			</div>
 			<div class="jam-video-info-grid">
 				<div class="video-title">
@@ -153,6 +181,10 @@
 		<div class="video-container">
 			<div class="thumbnail-row">
 				<img id="img" draggable="false" class="thumbnail" alt="" src="https://i.ytimg.com/vi/nRz-yw-wp34/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&amp;rs=AOn4CLBqy01VAZ6aRiQ-Lw815l2g06MAsw">
+				<div class="jam-preview">
+					<span class="play-icon">&#9654;</span> 
+					<p class="jam-preview-text">ВОСПРОИЗВЕСТИ ВСЕ</p> 
+				</div>
 			</div>
 			<div class="jam-video-info-grid">
 				<div class="video-title">
@@ -167,6 +199,10 @@
 		<div class="video-container">
 			<div class="thumbnail-row">
 				<img id="img" draggable="false" class="thumbnail" alt=""  src="https://i.ytimg.com/vi/iJGrzWzi_0I/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&amp;rs=AOn4CLCAGX90Egz5Fu8f7xB8wdLKIpSmaQ">
+				<div class="jam-preview">
+					<span class="play-icon">&#9654;</span> 
+					<p class="jam-preview-text">ВОСПРОИЗВЕСТИ ВСЕ</p> 
+				</div>
 			</div>
 			<div class="jam-video-info-grid">
 				<div class="video-title">
@@ -181,6 +217,8 @@
 		<div class="video-container">
 			<div class="thumbnail-row">
 				<img id="img" draggable="false" class="thumbnail" alt="" src="https://i.ytimg.com/vi/lgjguiFxtps/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLDgNoQXaAD-m7PS4GO5DGiIgHMGRQ">
+				<div class="video-timer">1:15:07</div>
+				<div class="preview">Если убрать указатель, предпросмотр прекратится</div>
 			</div>
 			<div class="video-info-grid">
 				<div class="channel-picture">
@@ -201,6 +239,8 @@
 		<div class="video-container">
 			<div class="thumbnail-row">
 				<img id="img" draggable="false" class="thumbnail" alt=""  src="https://i.ytimg.com/vi/Yh6JxuDijpo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLBrF8B8SOmxZVf-JyTlrBBjBtGUhw">
+				<div class="video-timer">20:44</div>
+				<div class="preview">Если убрать указатель, предпросмотр прекратится</div>
 			</div>
 			<div class="video-info-grid">
 				<div class="channel-picture">
@@ -221,6 +261,8 @@
 		<div class="video-container">
 			<div class="thumbnail-row">
 				<img id="img" draggable="false" class="thumbnail" alt="" src="https://i.ytimg.com/vi/CxgOKJh4zWE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLBsZSTNsLxNmTaWIKQ-J6B2WUtpSg">
+				<div class="video-timer">10:55:34</div>
+				<div class="preview">Если убрать указатель, предпросмотр прекратится</div>
 			</div>
 			<div class="video-info-grid">
 				<div class="channel-picture">

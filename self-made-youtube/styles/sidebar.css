@@ -7,6 +7,7 @@
   width: 72px;
   z-index: 400;
   padding-top: 5px;
+  z-index: 600;
 }
 .sidebar-link {
   height: 74px;

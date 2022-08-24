@@ -12,6 +12,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  z-index: 500;
 }
 
 .left-section {
@@ -36,6 +37,22 @@
   justify-content: center;
 }
 
+.hamburger-menu-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin-left: 17px;
+  margin-right: 15px;
+  border-style: none;
+  background-color: white;
+  padding-top: 4px;
+  padding-right: 8px;
+}
+
+.hamburger-menu-button:active {
+  background-color: rgb(221, 221, 221);
+}
+
 .search-bar {
   font-family: Roboto, Arial;
   background-color: white;
@@ -47,6 +64,11 @@
   height: 34px;
   width: 530px;
   padding: 2px 6px 2px 6px;
+}
+
+.search-bar:focus {
+  border-style: solid;
+  border-width: 1px;
 }
 
 ::placeholder {
@@ -67,9 +89,10 @@
   cursor: pointer;
 }
 
-.search-bar:focus {
-  border: none
+.search-button:active {
+  background-color: rgb(221, 221, 221);
 }
+
 
 .voice-search-button {
   width: 40px;
@@ -144,6 +167,7 @@
   border-bottom-color: rgb(230, 230, 230);
   border-bottom-style: solid;
   border-bottom-width: 1px;
+  z-index: 500;
 }
 
 .cloud {
@@ -154,4 +178,9 @@
   border: 1px solid rgb(216, 216, 216);
   color: rgb(39, 39, 39);
   cursor: pointer;
+}
+
+.active, .cloud:hover {
+  background-color: black;
+  color: white;
 }
