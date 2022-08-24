@@ -86,7 +86,14 @@
 			<div>Библиотека</div>
 		</div>
 		<div class="sidebar-link">
-			<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 32%; height: 50%;"><g class="style-scope yt-icon"><path d="M14.97,16.95L10,13.87V7h2v5.76l4.03,2.49L14.97,16.95z M22,12c0,5.51-4.49,10-10,10S2,17.51,2,12h1c0,4.96,4.04,9,9,9 s9-4.04,9-9s-4.04-9-9-9C8.81,3,5.92,4.64,4.28,7.38C4.17,7.56,4.06,7.75,3.97,7.94C3.96,7.96,3.95,7.98,3.94,8H8v1H1.96V3h1v4.74 C3,7.65,3.03,7.57,3.07,7.49C3.18,7.27,3.3,7.07,3.42,6.86C5.22,3.86,8.51,2,12,2C17.51,2,22,6.49,22,12z" class="style-scope yt-icon"></path></g></svg>
+			<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
+				style="pointer-events: none; display: block; width: 32%; height: 50%;">
+				<g class="style-scope yt-icon">
+					<path
+						d="M14.97,16.95L10,13.87V7h2v5.76l4.03,2.49L14.97,16.95z M22,12c0,5.51-4.49,10-10,10S2,17.51,2,12h1c0,4.96,4.04,9,9,9 s9-4.04,9-9s-4.04-9-9-9C8.81,3,5.92,4.64,4.28,7.38C4.17,7.56,4.06,7.75,3.97,7.94C3.96,7.96,3.95,7.98,3.94,8H8v1H1.96V3h1v4.74 C3,7.65,3.03,7.57,3.07,7.49C3.18,7.27,3.3,7.07,3.42,6.86C5.22,3.86,8.51,2,12,2C17.51,2,22,6.49,22,12z"
+						class="style-scope yt-icon"></path>
+				</g>
+			</svg>
 			<div>История</div>
 		</div>
 	</div>
@@ -109,128 +116,136 @@
 		var header = document.getElementById("underheader");
 		var btns = header.getElementsByClassName("cloud");
 		for (var i = 0; i < btns.length; i++) {
-			btns[i].addEventListener("click", function() {
-			var current = document.getElementsByClassName("active");
-			current[0].className = current[0].className.replace(" active", "");
-			this.className += " active";
+			btns[i].addEventListener("click", function () {
+				var current = document.getElementsByClassName("active");
+				current[0].className = current[0].className.replace(" active", "");
+				this.className += " active";
 			});
 		}
-		</script>
-		
+	</script>
+
 
 	<div class="whole-container">
 		<div class="video-container">
 			<div class="thumbnail-row">
-				<img id="img" draggable="false" class="thumbnail" alt="" src="https://i.ytimg.com/vi/vnleZexvgtw/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&amp;rs=AOn4CLBtCYYCPoAO5iy6IFOOvQ1dGl5s5g">
+				<img id="img" draggable="false" class="thumbnail" alt=""
+					src="https://i.ytimg.com/vi/vnleZexvgtw/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&amp;rs=AOn4CLBtCYYCPoAO5iy6IFOOvQ1dGl5s5g">
 				<div class="jam-preview">
-					<span class="play-icon">&#9654;</span> 
-					<p class="jam-preview-text">ВОСПРОИЗВЕСТИ ВСЕ</p> 
+					<span class="play-icon">&#9654;</span>
+					<p class="jam-preview-text">ВОСПРОИЗВЕСТИ ВСЕ</p>
 				</div>
 			</div>
 			<div class="jam-video-info-grid">
 				<div class="video-title">
-					<p class="video-title-text">Джем &#8211; Когда она ложилась спать... Свидание. Speed up</p> 
+					<p class="video-title-text">Джем &#8211; Когда она ложилась спать... Свидание. Speed up</p>
 				</div>
 				<div class="undertitle">
-					<p class="undertitle-text">Свидание, Даниил Шайхинуров, Ева Краузе и другие исполнители</p> 
+					<p class="undertitle-text">Свидание, Даниил Шайхинуров, Ева Краузе и другие исполнители</p>
 				</div>
 			</div>
 		</div>
 
 		<div class="video-container">
 			<div class="thumbnail-row">
-				<img id="img" draggable="false" class="thumbnail" alt="" src="https://i.ytimg.com/vi/Q1kHG842HoI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLCg6DBuhDmALpKQFAcbfK0wJs6DDA">
+				<img id="img" draggable="false" class="thumbnail" alt=""
+					src="https://i.ytimg.com/vi/Q1kHG842HoI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLCg6DBuhDmALpKQFAcbfK0wJs6DDA">
 				<div class="video-timer">54:28</div>
 				<div class="preview">Если убрать указатель, предпросмотр прекратится</div>
 			</div>
 			<div class="video-info-grid">
 				<div class="channel-picture">
-					<img id="img" draggable="false" class="channel-img" alt="" width="36" src="https://yt3.ggpht.com/ytc/AMLnZu8GIzgoQ2ynUtqqsa1-dCCaJ9yIp6qczSoCDgD9=s68-c-k-c0x00ffffff-no-rj">
+					<img id="img" draggable="false" class="channel-img" alt="" width="36"
+						src="https://yt3.ggpht.com/ytc/AMLnZu8GIzgoQ2ynUtqqsa1-dCCaJ9yIp6qczSoCDgD9=s68-c-k-c0x00ffffff-no-rj">
 				</div>
 				<div class="video-info">
 					<div class="video-title">
-						<p class="video-title-text">Git Branching and Merging - Detailed Tutorial</p> 
+						<p class="video-title-text">Git Branching and Merging - Detailed Tutorial</p>
 					</div>
 					<div class="undertitle">
-						<p class="undertitle-text">SuperSimpleDev</p> 
-						<p class="undertitle-text">26 тыс. просмотров &#8226; 1 год назад</p> 
+						<p class="undertitle-text">SuperSimpleDev</p>
+						<p class="undertitle-text">26 тыс. просмотров &#8226; 1 год назад</p>
 					</div>
-					
+
 				</div>
 			</div>
 		</div>
 
 		<div class="video-container">
 			<div class="thumbnail-row">
-				<img id="img" draggable="false" class="thumbnail" alt="" src="https://i.ytimg.com/vi/u01upDJgX_g/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&amp;rs=AOn4CLD1q9r39EUrIVA_Jc9KVkFSsBqx0A">
+				<img id="img" draggable="false" class="thumbnail" alt=""
+					src="https://i.ytimg.com/vi/u01upDJgX_g/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&amp;rs=AOn4CLD1q9r39EUrIVA_Jc9KVkFSsBqx0A">
 				<div class="jam-preview">
-					<span class="play-icon">&#9654;</span> 
-					<p class="jam-preview-text">ВОСПРОИЗВЕСТИ ВСЕ</p> 
+					<span class="play-icon">&#9654;</span>
+					<p class="jam-preview-text">ВОСПРОИЗВЕСТИ ВСЕ</p>
 				</div>
 			</div>
 			<div class="jam-video-info-grid">
 				<div class="video-title">
-					<p class="video-title-text">Мой джем</p> 
+					<p class="video-title-text">Мой джем</p>
 				</div>
 				<div class="undertitle">
-					<p class="undertitle-text">Alice Change и другие исполнители</p> 
+					<p class="undertitle-text">Alice Change и другие исполнители</p>
 				</div>
 			</div>
 		</div>
 
 		<div class="video-container">
 			<div class="thumbnail-row">
-				<img id="img" draggable="false" class="thumbnail" alt="" src="https://i.ytimg.com/vi/nRz-yw-wp34/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&amp;rs=AOn4CLBqy01VAZ6aRiQ-Lw815l2g06MAsw">
+				<img id="img" draggable="false" class="thumbnail" alt=""
+					src="https://i.ytimg.com/vi/nRz-yw-wp34/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&amp;rs=AOn4CLBqy01VAZ6aRiQ-Lw815l2g06MAsw">
 				<div class="jam-preview">
-					<span class="play-icon">&#9654;</span> 
-					<p class="jam-preview-text">ВОСПРОИЗВЕСТИ ВСЕ</p> 
+					<span class="play-icon">&#9654;</span>
+					<p class="jam-preview-text">ВОСПРОИЗВЕСТИ ВСЕ</p>
 				</div>
 			</div>
 			<div class="jam-video-info-grid">
 				<div class="video-title">
-					<p class="video-title-text">Джем &#8211; Альтернативный метал</p> 
+					<p class="video-title-text">Джем &#8211; Альтернативный метал</p>
 				</div>
 				<div class="undertitle">
-					<p class="undertitle-text">Korn и другие исполнители</p> 
+					<p class="undertitle-text">Korn и другие исполнители</p>
 				</div>
 			</div>
 		</div>
 
 		<div class="video-container">
 			<div class="thumbnail-row">
-				<img id="img" draggable="false" class="thumbnail" alt=""  src="https://i.ytimg.com/vi/iJGrzWzi_0I/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&amp;rs=AOn4CLCAGX90Egz5Fu8f7xB8wdLKIpSmaQ">
+				<img id="img" draggable="false" class="thumbnail" alt=""
+					src="https://i.ytimg.com/vi/iJGrzWzi_0I/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&amp;rs=AOn4CLCAGX90Egz5Fu8f7xB8wdLKIpSmaQ">
 				<div class="jam-preview">
-					<span class="play-icon">&#9654;</span> 
-					<p class="jam-preview-text">ВОСПРОИЗВЕСТИ ВСЕ</p> 
+					<span class="play-icon">&#9654;</span>
+					<p class="jam-preview-text">ВОСПРОИЗВЕСТИ ВСЕ</p>
 				</div>
 			</div>
 			<div class="jam-video-info-grid">
 				<div class="video-title">
-					<p class="video-title-text">Джем &#8211; Рок-музыка</p> 
+					<p class="video-title-text">Джем &#8211; Рок-музыка</p>
 				</div>
 				<div class="undertitle">
-					<p class="undertitle-text">Кино и другие исполнители</p> 
+					<p class="undertitle-text">Кино и другие исполнители</p>
 				</div>
 			</div>
 		</div>
 
 		<div class="video-container">
 			<div class="thumbnail-row">
-				<img id="img" draggable="false" class="thumbnail" alt="" src="https://i.ytimg.com/vi/lgjguiFxtps/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLDgNoQXaAD-m7PS4GO5DGiIgHMGRQ">
+				<img id="img" draggable="false" class="thumbnail" alt=""
+					src="https://i.ytimg.com/vi/lgjguiFxtps/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLDgNoQXaAD-m7PS4GO5DGiIgHMGRQ">
 				<div class="video-timer">1:15:07</div>
 				<div class="preview">Если убрать указатель, предпросмотр прекратится</div>
 			</div>
 			<div class="video-info-grid">
 				<div class="channel-picture">
-					<img id="img" draggable="false" class="channel-img" alt="" width="36" src="https://yt3.ggpht.com/ytc/AMLnZu-WhlcQmH9DK62I7D_lR__JxjCc3QHN0DYxwC_3-A=s68-c-k-c0x00ffffff-no-rj">
+					<img id="img" draggable="false" class="channel-img" alt="" width="36"
+						src="https://yt3.ggpht.com/ytc/AMLnZu-WhlcQmH9DK62I7D_lR__JxjCc3QHN0DYxwC_3-A=s68-c-k-c0x00ffffff-no-rj">
 				</div>
 				<div class="video-info">
 					<div class="video-title">
-						<p class="video-title-text">Russian Doomer music vol.9 (New Superior?)</p> 
+						<p class="video-title-text">Russian Doomer music vol.9 (New Superior?)</p>
 					</div>
 					<div class="undertitle">
-						<p class="undertitle-text">JustMyFavStrangeMusic</p> 
-						<p class="undertitle-text">3,2 млн просмотров &#8226; 2 года назад</p> 
+						<p class="undertitle-text">JustMyFavStrangeMusic</p>
+						<p class="undertitle-text">3,2 млн просмотров &#8226; 2 года назад</p>
 					</div>
 				</div>
 			</div>
@@ -238,21 +253,23 @@
 
 		<div class="video-container">
 			<div class="thumbnail-row">
-				<img id="img" draggable="false" class="thumbnail" alt=""  src="https://i.ytimg.com/vi/Yh6JxuDijpo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLBrF8B8SOmxZVf-JyTlrBBjBtGUhw">
+				<img id="img" draggable="false" class="thumbnail" alt=""
+					src="https://i.ytimg.com/vi/Yh6JxuDijpo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLBrF8B8SOmxZVf-JyTlrBBjBtGUhw">
 				<div class="video-timer">20:44</div>
 				<div class="preview">Если убрать указатель, предпросмотр прекратится</div>
 			</div>
 			<div class="video-info-grid">
 				<div class="channel-picture">
-					<img id="img" draggable="false" class="channel-img" alt="" width="36" src="https://yt3.ggpht.com/u7VuSwpdjio7xoJoEM61qFGKrqP2eUVh3wzgvfwO9K241Y5RAGEAMVj7MlynwtzqOm38Fuhl6bo=s88-c-k-c0x00ffffff-no-rj">
+					<img id="img" draggable="false" class="channel-img" alt="" width="36"
+						src="https://yt3.ggpht.com/u7VuSwpdjio7xoJoEM61qFGKrqP2eUVh3wzgvfwO9K241Y5RAGEAMVj7MlynwtzqOm38Fuhl6bo=s88-c-k-c0x00ffffff-no-rj">
 				</div>
 				<div class="video-info">
 					<div class="video-title">
-						<p class="video-title-text">SadSvit - Cassette (full album 2021)</p> 
+						<p class="video-title-text">SadSvit - Cassette (full album 2021)</p>
 					</div>
 					<div class="undertitle">
-						<p class="undertitle-text">SadSvit &#9834;</p> 
-						<p class="undertitle-text">298 тыс. просмотров &#8226; 8 месяцев назад</p> 
+						<p class="undertitle-text">SadSvit &#9834;</p>
+						<p class="undertitle-text">298 тыс. просмотров &#8226; 8 месяцев назад</p>
 					</div>
 				</div>
 			</div>
@@ -260,38 +277,31 @@
 
 		<div class="video-container">
 			<div class="thumbnail-row">
-				<img id="img" draggable="false" class="thumbnail" alt="" src="https://i.ytimg.com/vi/CxgOKJh4zWE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLBsZSTNsLxNmTaWIKQ-J6B2WUtpSg">
+				<img id="img" draggable="false" class="thumbnail" alt=""
+					src="https://i.ytimg.com/vi/CxgOKJh4zWE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLBsZSTNsLxNmTaWIKQ-J6B2WUtpSg">
 				<div class="video-timer">10:55:34</div>
 				<div class="preview">Если убрать указатель, предпросмотр прекратится</div>
 			</div>
 			<div class="video-info-grid">
 				<div class="channel-picture">
-					<img id="img" draggable="false" class="channel-img" alt="" width="36" src="https://yt3.ggpht.com/NWy3olf2CXOteooDed7-2v53DUhJy2M7DLRvyKkO58ovdNa9u_2z8i97YjANW25mtXJV1M4_Pg=s68-c-k-c0x00ffffff-no-rj">
+					<img id="img" draggable="false" class="channel-img" alt="" width="36"
+						src="https://yt3.ggpht.com/NWy3olf2CXOteooDed7-2v53DUhJy2M7DLRvyKkO58ovdNa9u_2z8i97YjANW25mtXJV1M4_Pg=s68-c-k-c0x00ffffff-no-rj">
 				</div>
 				<div class="video-info">
 					<div class="video-title">
-						<p class="video-title-text">JavaScript - Полный Курс JavaScript Для Начинающих [11 ЧАСОВ]</p> 
+						<p class="video-title-text">JavaScript - Полный Курс JavaScript Для Начинающих [11 ЧАСОВ]</p>
 					</div>
 					<div class="undertitle">
-						<p class="undertitle-text">Bogdan Stashchuk</p> 
-						<p class="undertitle-text">2.3 млн просмотров &#8226; 8 месяцев назад</p> 
+						<p class="undertitle-text">Bogdan Stashchuk</p>
+						<p class="undertitle-text">2.3 млн просмотров &#8226; 8 месяцев назад</p>
 					</div>
 				</div>
 			</div>
 		</div>
 
-	
+
 	</div>
 
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-

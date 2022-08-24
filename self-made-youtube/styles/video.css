@@ -57,24 +57,24 @@
 }
 
 .jam-preview {
-    position: absolute;
-    top: 0px;
-    bottom: 5px;
-    right: 0px;
-    left: 0px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    font-family: Roboto, Arial;
-    font-weight: 500;
-    font-size: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
+  position: absolute;
+  top: 0px;
+  bottom: 5px;
+  right: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-family: Roboto, Arial;
+  font-weight: 500;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
 }
 
 .jam-preview-text {
-    margin: 2px 0px 0px 5px;
+  margin: 2px 0px 0px 5px;
 }
 
 .thumbnail-row {
@@ -87,7 +87,7 @@
 }
 
 .play-icon {
-    font-size: 32px;
+  font-size: 32px;
 }
 
 .channel-picture {
