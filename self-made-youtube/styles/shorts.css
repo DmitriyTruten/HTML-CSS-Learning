@@ -1,0 +1,23 @@
+.shorts-container {
+  border: 4px solid rgb(218, 218, 218);
+  border-right: none;
+  border-left: none;
+}
+
+.shorts-row {
+  display: flex;
+  align-items: center;
+  margin: 24px 0px 24px 8px;
+}
+
+.shorts-icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.shorts-text {
+  display: inline-block;
+  margin: 0px 0px 0px 10px;
+  font-size: 20px;
+}
