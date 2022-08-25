@@ -8,8 +8,12 @@
 
 .shorts-videos {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     column-gap: 16px;
+}
+
+.short-video {
+  display: inline-block;
 }
 
 .shorts-row {
@@ -31,7 +35,11 @@
 }
 
 .shorts-image {
-  width: 85%;
+  width: 100%;
+}
+
+.shorts-image-container {
+  width: 100%;
 }
 
 .shorts-undertitle {
