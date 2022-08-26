@@ -45,8 +45,9 @@
   margin-right: 15px;
   border-style: none;
   background-color: white;
-  padding-top: 4px;
-  padding-right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hamburger-menu-button:active {
