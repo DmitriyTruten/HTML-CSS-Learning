@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+  <div class="header">
+    <div class="left-section">
+      <img class="pizzburg-logo" src="images/pizzburg-logo.svg" alt="">
+    </div>
+    <div class="middle-section">
+      <p class="schedule">У воєнний час приймаємо замовлення щодня з 10:00 до 21:00. Слава Україні! </p>
+      <div class="phone-numbers">
+        <img style="border-radius: 20px; margin-right: 9px;" src="icons/phone-icon.png" alt="">
+        <span style="margin-right: 9px;">(063) 574-94-94;</span>
+        <span style="margin-right: 9px;">(068) 574-94-94;</span>
+        <span style="margin-right: 9px;">(095) 574-94-94;</span>
+      </div>
+    </div>
+    <div class="right-section">
+      <div class="search-container">
+        <img src="icons/search-icon.png" alt="">
+      </div>
+      <div class="cart-container">
+        <img src="icons/cart-icon.png" alt="">
+        <p style="display: inline-block; font-size: 16px; font-family: Open Sans;">0 грн.</p>
+      </div>
+      <div id="language-buttons" class="language-buttons">
+        <button class="lang-btn">RUS</button>
+        <button class="lang-btn active">UKR</button>
+      </div>
+      <span style="position: absolute; background-color: yellow; padding-left: 5px; padding-right: 5px; padding-top: 2px; padding-bottom: 2px; border-radius: 100px; font-size: 11px; top: 16px; left: 35px;">0</span>
+    </div>
+  </div>
+
+  <script src="js/clickListener.js"></script>
+</body>
+
+</html>
