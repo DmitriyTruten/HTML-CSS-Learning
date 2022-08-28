@@ -18,9 +18,6 @@
   height: 1px;
   background-color: white;
   transition: 0.3s;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  transform-origin: bottom;
 }
 
 .hamburger-container span:nth-child(1) {
@@ -41,15 +38,4 @@
 
 .hamburger-container.activated span:nth-child(3) {
   background: transparent;
-}
-
-.hamburger-container:hover {
-  animation-name: container-hover;
-  animation-timing-function: ease;
-}
-
-@keyframes container-hover {
-  0%   { transform: translateY(0); }
-  50%  { transform: scaleX(0.5); }
-  100% { transform: translateY(0); }
 }
