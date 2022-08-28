@@ -1,7 +1,7 @@
 .sidenav {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   position: fixed;
   background-color: white;
   width: 68px;
@@ -12,16 +12,29 @@
   border-right-color: rgb(236, 236, 236);
   box-shadow: 4px 0px 10px rgb(228, 228, 228);
   transition: 0.4s;
-  overflow-y:scroll;
-  min-height:0;
-  -webkit-box-flex:1;
-  flex:1;
+  overflow-y: scroll;
+  justify-content: space-between;
+  padding-bottom: 80px;
 }
 
 ::-webkit-scrollbar {
   display: none;
 }
 
-.sidenav a{
+.sidenav a {
   margin-top: 12px;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-family: Open Sans;
+  font-size: 13px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.menu-choice-text {
+  margin-left: 18px;
 }
