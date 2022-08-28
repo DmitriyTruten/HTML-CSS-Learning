@@ -1,4 +1,7 @@
 .sidenav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: fixed;
   background-color: white;
   width: 68px;
@@ -8,6 +11,17 @@
   border-right-style: solid;
   border-right-color: rgb(236, 236, 236);
   box-shadow: 4px 0px 10px rgb(228, 228, 228);
-  overflow-x: hidden;
   transition: 0.4s;
+  overflow-y:scroll;
+  min-height:0;
+  -webkit-box-flex:1;
+  flex:1;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.sidenav a{
+  margin-top: 12px;
 }
