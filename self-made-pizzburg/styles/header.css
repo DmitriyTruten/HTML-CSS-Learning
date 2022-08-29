@@ -12,8 +12,12 @@
   border-bottom-style: solid;
   border-bottom-color: rgb(236, 236, 236);
   box-shadow: 0px 3px 10px rgb(228, 228, 228);
+  background-color: white;
   left: 68px;
   right: 0px;
+  top: 0px;
+  z-index: 500;
+  clip-path: inset(5px 5px -6px 0px);
 }
 
 .left-section {
@@ -38,6 +42,7 @@
 .schedule {
   font-family: Open Sans;
   font-size: 13px;
+  color: gray;
 }
 
 .phone-numbers {
@@ -79,6 +84,8 @@
   font-family: Open Sans;
   font-size: 10px;
   cursor: pointer;
+  color: gray;
+  margin-right: 5px;
 }
 
 .lang-btn:hover {
