@@ -117,7 +117,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px 20px 0px 20px ;
+  padding: 0px 20px 0px 20px;
   justify-content: space-between;
 }
 
@@ -131,3 +131,159 @@
   font-size: 13px;
 }
 
+.cards-grid {
+  display: grid;
+  grid-template-columns: 335px 335px 335px;
+  grid-template-rows: 581px 581px 581px;
+  margin: 65px;
+  column-gap: 75px;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid black;
+  padding: 14px 20px 20px 20px;
+}
+
+.pizza-name-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pizza-name {
+  font-size: 14px;
+  font-family: Open Sans;
+  font-weight: 600;
+  margin: 15px 0px 25px 0px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.pizza-description-container {
+  display: inline-block;
+}
+
+.pizza-description {
+  font-size: 15px;
+  line-height: 26px;
+}
+
+.weight {
+  display: inline-block;
+  margin-top: 7px;
+}
+
+.weight-text {
+  font-size: 9px;
+}
+
+.options {
+  margin-top: 70px;
+}
+
+.pizza-size {
+  display: flex;
+  justify-content: center;
+}
+
+
+.price-n-size {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.size {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border-width: 1px;
+  background-color: white;
+  margin-right: 5px;
+  font-size: 11px;
+  font-family: Open Sans;
+  font-weight: 700;
+}
+
+.price {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.plus {
+  width: 18px;
+  height: 18px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vertical {
+  width: 2px;
+  height: 12px;
+  background-color: white;
+  position: absolute;
+}
+
+.horizontal {
+  width: 12px;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+}
+
+.minus {
+  width: 18px;
+  height: 18px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.cart-btn {
+  width: 153px;
+  height: 50px;
+  background-color: white;
+  border: 1px solid black;  
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.count {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;  
+  width: 90px;
+}
+
+.count input{
+  box-sizing: border-box;
+  max-width: 10px;
+  display: block;
+  border: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
