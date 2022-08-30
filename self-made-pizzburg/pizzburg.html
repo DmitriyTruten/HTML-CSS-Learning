@@ -194,8 +194,8 @@
         </div>
         <div class="options">
           <div class="price-n-size">
-            <div class="pizza-size">
-              <button class="size">30 см.</button>
+            <div id="p-size" class="pizza-size">
+              <button class="size s-active">30 см.</button>
               <button class="size">40 см.</button>
             </div>
             <p class="price">Ціна: 169 грн.</p>
@@ -206,7 +206,7 @@
                 <span class="horizontal"></span>
               </button>
               <label>
-                <input type="number" name="product_count" value="1" class="js-count__input-cat">
+                <input type="number" name="product_count" value="1" class="count-input">
               </label>
               <button class="plus">
                 <span class="vertical"></span>
@@ -223,6 +223,7 @@
   </main>
 
   <script src="js/clickListener.js"></script>
+  <script src="js/clickSizeListener.js"></script>
   <script src="js/hamMenuClick.js"></script>
   <script src="js/hideShowSidebar.js"></script>
   <script src="js/dropDownMenu.js"></script>

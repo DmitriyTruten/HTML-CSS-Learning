@@ -92,8 +92,7 @@
   text-decoration: underline;
 }
 
-.active,
-.active:hover{
+.active {
   background-color: rgb(219, 219, 219);
 }
 
