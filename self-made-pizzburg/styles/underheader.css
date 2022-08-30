@@ -1,0 +1,132 @@
+.title {
+  display: flex;
+  flex-direction: row;
+  margin-left: 35px;
+  margin-top: 10px;
+}
+
+.title-link {
+  text-decoration: none;
+  color: gray;
+  font-size: 15px;
+  font-family: Open Sans;
+}
+
+.title-with-sort {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 40px;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 43px;
+  position: relative;
+}
+
+.dropdown-btn {
+  background-color: white;
+  border: 1px solid rgb(236, 236, 236);
+  color: rgb(189, 189, 189);
+  font-family: Open Sans;
+  margin-left: 10px;
+  box-shadow: 0px 0px 5px 2px rgb(235, 235, 235);
+  width: 230px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  border-bottom-style: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 228px;
+  background-color: white;
+  border: 1px solid rgb(236, 236, 236);
+  color: rgb(189, 189, 189);
+  font-family: Open Sans;
+  margin-left: 10px;
+}
+
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  background-color: white;
+  color: rgb(189, 189, 189);
+  font-family: Open Sans;
+  font-size: 13px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  transition: 0.6s;
+  border-top-style: none;
+}
+
+.dropdown-content a:hover {
+  color: black;
+}
+
+.show {
+  display: block;
+  box-shadow: 0px 0px -5px 2px rgb(235, 235, 235);
+}
+
+.show .dropdown-btn {
+  border-bottom-style: none;
+}
+
+.more-icon {
+  height: 20px;
+  color: gray;
+}
+
+.sort-text {
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 300;
+}
+
+.create-text {
+  font-size: 17px;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.pizza-constructor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 99px;
+  margin-left: 55px;
+}
+
+.pizza-const-btn {
+  height: 50px;
+  width: 470px;
+  border-radius: 0px;
+  border: 1px solid black;
+  background-color: white;
+  margin-right: 52px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 20px 0px 20px;
+  justify-content: space-between;
+}
+
+.pizza-const-btn:hover {
+  background-color: yellow;
+  transition: 1s;
+}
+
+.pizza-const-text {
+  font-weight: 600;
+  font-size: 13px;
+}
