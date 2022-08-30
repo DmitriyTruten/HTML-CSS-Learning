@@ -1,7 +1,7 @@
 .cards-grid {
   display: grid;
   grid-template-columns: 335px 335px 335px;
-  grid-template-rows: 592px 592px 592px;
+  grid-template-rows: 592px 592px;
   margin: 65px;
   column-gap: 75px;
   row-gap: 30px;
