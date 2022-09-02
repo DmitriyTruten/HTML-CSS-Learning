@@ -1,12 +1,47 @@
 .main-card {
   display: flex;
+  flex-direction: column;
   background-color: white;
   position: absolute;
   width: 1100px;
-  height: 500px;
+  height: 550px;
   left: 50%;
   top: 50%;
   margin-left: -550px;
-  margin-top: -250px;
+  margin-top: -275px;
   border-radius: 30px;
+}
+
+.main-info {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid gray;
+  height: 80%;
+  width: 100%;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0px 0px 80px;
+  width: 50%;
+  border: 1px solid gray;
+}
+
+.greeting {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0px;
+}
+
+.under-greeting {
+  font-size: 35px;
+  font-weight: 800;
+  margin: 20px 0px 0px 0px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.icons-container {
+  display: block;
+  margin-top: 50px;
 }

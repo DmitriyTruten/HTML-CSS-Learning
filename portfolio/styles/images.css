@@ -1,0 +1,14 @@
+.contact-logo {
+  width: 25px;
+  height: 25px;
+  opacity: 0.5;
+  margin-right: 10px;
+}
+
+.contact-logo:hover {
+  opacity: 1;
+}
+
+.contact-link {
+  text-decoration: none;
+}
