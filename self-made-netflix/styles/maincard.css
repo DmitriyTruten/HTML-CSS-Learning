@@ -1,0 +1,23 @@
+.main-card {
+  height: 692.5px;
+  position: relative;
+}
+
+.main-card::after {
+  box-shadow: inset 0px 0px 100px 100px rgba(0, 0, 0, 0.6);
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 0;
+  height: 101%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.main-card-background {
+  height: 700px;
+  width: 1349px; 
+  filter: brightness(50%);
+}
