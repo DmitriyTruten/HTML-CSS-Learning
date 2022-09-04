@@ -20,9 +20,24 @@
     <img class="main-card-background" src="images/background.jpg" alt="">
     <header class="header">
       <img class="netflix-logo" src="images/netflix-logo.png" alt="">
-      <button class="sign-in">Sign In</button>
+      <div class="right-section">
+        <div class="dropdown">
+          <button onclick="dropDown()" class="dropdown-btn">
+            <img src="images/globe.png" alt="">
+            English
+            <img class="arrow" src="images/arrow.png" alt="">
+          </button>
+          <div id="dropdown" class="dropdown-content">
+            <a href="#">Українська</a>
+            <a href="#">English</a>
+          </div>
+        </div>
+        <button class="sign-in">Sign In</button>
+      </div>
     </header>
   </div>
+
+  <script src="js/dropdown-menu.js"></script>
 </body>
 
 </html>
