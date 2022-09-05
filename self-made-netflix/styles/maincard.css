@@ -1,6 +1,9 @@
 .main-card {
   height: 692.5px;
   position: relative;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(82, 82, 82);
+  border-bottom-width: 15px;
 }
 
 .main-card::after {
