@@ -106,6 +106,7 @@
   padding-left: 30px;
   cursor: pointer;
   position: relative;
+  margin-top: 5px;
 }
 
 .faq-dropdown-btn span {
@@ -131,8 +132,20 @@
 
 .faq-dropdown-content {
   display: none;
+  background-color: rgb(48, 48, 48);
+  max-width: 811px;
+  margin-left: 2px;
 }
 
 .faq-show {
   display: block;
+}
+
+.faq-answer {
+  color: white;
+  font-size: 28px;
+  font-weight: 500;
+
+  padding: 31px;
+  margin: 0;
 }
