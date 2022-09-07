@@ -12,6 +12,17 @@
   border-bottom-width: 8px;
 }
 
+.faq-card {
+  flex-direction: column;
+  justify-content: start;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(44, 44, 44);
+  border-bottom-width: 8px;
+}
+
 .tv-card-text,
 .phone-card-text {
   display: flex;
@@ -76,4 +87,52 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.faq-dropdown {
+  transition: ease-in-out 0.3s;
+}
+
+.faq-dropdown-btn {
+  width: 815px;
+  height: 75px;
+  background-color: rgb(48, 48, 48);
+  color: white;
+  font-size: 28px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+.faq-dropdown-btn span {
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: white;
+  transition: 0.3s;
+  right: 30px;
+}
+
+.faq-dropdown-btn span:nth-child(1) {
+  transform: translateY(0px) rotate(90deg);
+}
+
+.faq-dropdown-btn.active span:nth-child(1) {
+  transform: rotate(135deg);
+}
+
+.faq-dropdown-btn.active span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.faq-dropdown-content {
+  display: none;
+}
+
+.faq-show {
+  display: block;
 }

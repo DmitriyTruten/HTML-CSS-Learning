@@ -14,3 +14,20 @@ window.onclick = function(event) {
     }
   }
 }
+
+function faqDropDown () {
+  document.getElementById("faq-dropdown").classList.toggle("faq-show")
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.faq-dropdown-btn')) {
+    let dropdowns = document.getElementsByClassName("faq-dropdown-content");
+    let i;
+    for (i = 0; i < dropdowns.length; i++) {
+      let openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('faq-show')) {
+        openDropdown.classList.remove('faq-show');
+      }
+    }
+  }
+}
