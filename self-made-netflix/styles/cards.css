@@ -1,5 +1,6 @@
 .tv-card,
-.phone-card {
+.phone-card,
+.footer {
   background-color: black;
   height: 326px;
   padding: 70px 45px 90px 45px;
