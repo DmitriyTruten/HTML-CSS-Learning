@@ -18,6 +18,10 @@ h1 {
   text-align: center;
 }
 
+#burger {
+  max-height: 30%;
+}
+
 #overlay {
   width: 80%;
   margin: 3% auto;
