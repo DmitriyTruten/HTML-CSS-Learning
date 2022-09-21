@@ -1,0 +1,24 @@
+header {
+  height: 69px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid seashell;
+  padding: 0px 10px;
+  position: fixed;
+  width: 100%;
+  background-color: black;
+  z-index: 100;
+}
+
+.left-section img {
+  height: 50px;
+  display: block;
+  margin-left: 10px;
+  position: relative;
+}
+
+.right-section a {
+  color: seashell;
+  margin-right: 20px;
+}
