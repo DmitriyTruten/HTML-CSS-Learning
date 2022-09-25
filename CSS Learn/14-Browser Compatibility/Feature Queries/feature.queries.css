@@ -1,0 +1,162 @@
+/* Introduction
+In a world where a variety of browsers run on so many different devices, with each of these browsers varying in their support for CSS features, a stylesheet that does not take browser compatibility into account can cause issues that, in the worst case, can break the layout of the entire website. Wouldn’t it be nice if websites could just ask the browser if it supported a CSS feature before it tries to render it? This is exactly what the @supports CSS at-rule does. CSS Conditional Rules, such as @media and @viewport, provide a way to conditionally style websites based on information about the environment that the website is viewed in. By learning how to use these rules effectively, we can provide consistent and rich CSS experiences across various browsers.
+
+CSS Feature Queries and Modernizr
+Before the @supports at-rule became available, developers relied on tools like Modernizr, which we learned about in the Browser Compatibility lesson, to check for browser support of newer CSS features. Modernizr queries whether the browser supports a CSS feature and provides appropriate fallbacks and polyfills if necessary. This approach usually works but requires JavaScript, which means an additional file needs to be downloaded and executed to render the website, adding to its load time.
+
+The @supports at-rule makes it possible to query whether a browser supports a particular CSS feature without using JavaScript.
+
+Syntax and Logic
+Syntax
+Let’s dig into the syntax of the @supports at-rule. You may already have some experience using other conditional rules such as the @media at-rule. The syntax is very similar—the @supports at-rule will apply the CSS declarations within curly brackets ({ }) only if the supports condition inside the parenthesis (( )) is supported. Consider the following code example: */
+
+@supports (aspect-ratio: 4 / 3) {
+   /* Any code here will only run if the browser supports the specified supports condition */
+ }
+/* Notice that the syntax calls for both the property (aspect-ratio) and the value (4 / 3) to be provided. The @supports at rule tests whether the browser supports a CSS declaration provided as the supports condition. In the case of the code example above, the feature query is mainly used to check if the aspect-ratio property is supported. In other cases, the property’s value may be what you are checking. For example, if we query the CSS declaration height: 90vh using the @support at-rule, we can check whether the height property is supported as well as whether the vh unit is supported.
+
+The @supports rule allows for the early adoption of new CSS features and ensures backward compatibility of a standard feature in older browsers. One feature which @supports is often used to check for is display: grid, which is not fully supported in any Internet Explorer versions. Take a look at the feature query for display: grid below: */
+
+/* Checks whether the grid value for the display property is supported first before applying the ruleset for the photo-gallery class */
+.photo-gallery{
+  display: inline-block;
+  margin: 20px;
+}
+ 
+@supports(display: grid){
+  .photo-gallery {
+    display: grid;
+    grid-row-gap: 20px;
+    grid-template-columns: auto auto auto;
+  }
+}
+/* In the above example, .photo-gallery will only be styled to CSS grid if the browser supports CSS grid. Otherwise more basic styling will need to be provided for .photo-gallery. If the browser does not support @supports, as not all browsers do as of this writing, then this entire code block will be skipped over as well. We will discuss browser support for feature queries in greater detail below.
+
+Logic
+In addition to its basic syntax, the @supports at-rule can also be used with logical operators including not, and, and or or a combination of operators for more sophisticated queries.
+
+The not operator negates the supports condition—the code inside the feature query will only run if the declaration provided as the supports condition is not supported. */
+
+@supports not (background: linear-gradient(red, white, blue)) {
+   /* Any code here will only be applied if the browser does NOT support linear gradients for the background property */
+ }
+/* The and operator joins multiple supports conditions together—the code inside the feature query will only run if all of the declarations provided as supports conditions are supported. */
+
+@supports (background: linear-gradient(red, white, blue)) and (background-color: rgba(115, 171, 100, 0.4)) {
+   /* Any code here will only be applied if the browser supports linear gradient for the background property AND RGBA color notation for the background-color property */
+ }
+/* The or operator checks if any one of the support conditions provided is supported—the code inside the feature query will run if any of the declarations provided as supports conditions are supported. */
+
+@supports (background: linear-gradient(red, white, blue)) or
+          (background: -webkit-linear-gradient(red, white, blue)) or
+          (background: -moz-linear-gradient(red, white, blue)) or
+          (background: -ms-linear-gradient(red, white, blue)) or
+          (background: -o-linear-gradient(red, white, blue)) {
+   /* Any code here will be applied if the browser supports any version of the linear gradient for the background-image property */
+ }
+/* We can use a combination of operators to create more complex logic to run CSS code if certain condition for support is met. */
+
+@supports ((background: linear-gradient(red, white, blue)) or
+          (background: -webkit-linear-gradient(red, white, blue)) or
+          (background: -moz-linear-gradient(red, white, blue)) or
+          (background: -ms-linear-gradient(red, white, blue)) or
+          (background: -o-linear-gradient(red, white, blue))) and
+          (background-color: rgba(115, 171, 100, 0.4)) {
+   /* Any code here will be applied if the browser supports any version of linear gradient for the background property AND RGBA color notation for the background-color property */
+ }
+/* Best Practices
+We learned about the syntax of the @supports at-rule and how to use logic to check for feature supports. Let’s talk about best practices for using feature queries!
+
+Be careful about using the not operator
+Now that we know how to use logic with feature queries, it would be reasonable to think about creating branched scenarios using the not operator, as in the following code example: */
+
+@supports (content-visibility: auto) {
+  .section {
+    /* This code is applied if the auto variable for the content-visibility property is supported */
+    content-visibility: auto;
+  }
+}
+ 
+@supports not (content-visibility: auto) {
+  .section {
+    /* This code is applied if the auto variable for the content-visibility property is not supported */
+    content-visibility: visible;
+  }
+}
+/* Remember that not all browsers support CSS feature queries—if the browser does not support the @supports at-rule, both of the code blocks above will be ignored even if the browser did support the feature provided as the supports condition. We should be careful not to rely on the not logic in general until feature queries become more universally supported.
+
+Provide default code for when feature queries are not supported
+Given that the browser will skip a feature query bracket if feature queries are not supported by the browser, it is good coding practice to always provide default code that is not conditional on feature queries. Consider the following code example: */
+
+/* More backwards-compatible code for older browsers */
+.photo-gallery{
+  display: inline-block;
+  margin: 20px;
+}
+ 
+@supports(display: grid){
+  /* flex box code for newer browsers */
+  .photo-gallery {
+    display: grid;
+    grid-row-gap: 20px;
+    grid-template-columns: auto auto auto;
+  }
+}
+/* In the above example, the more backwards-compatible code will be applied first. Only after that code has been applied does the browser check for CSS grid support and override the existing code. If the browser does not support CSS grid or if the browser does not support feature queries, the backwards-compatible code will still be in place.
+
+Until feature queries become more established and universally supported by browsers, we should try our best to always write our code to work as well as possible even if the browser does not support feature queries.
+
+Design Philosophies for Browser Compatibility
+Now that we are familiar with the syntax and logic of feature queries and some best practices when using them, let’s discuss our design philosophy and ways of thinking about providing browser compatibility. There are two design philosophies for making websites compatible across browsers: graceful degradation and progressive enhancement. The tools you use will depend on the approach you take. Feature queries are a tool best used in a progressive enhancement approach, and we will outline why below.
+
+Graceful Degradation
+Graceful degradation is the idea of working your way down to simpler code when the more complex code fails. We can think of this as a top-down approach. Consider the following code example that uses the linear-gradient feature: */
+
+.button {
+  /* Use the newer feature by default */
+  background: linear-gradient(red, white, blue);
+}
+@supports not (background: linear-gradient(red, white, blue)) {
+  .button {
+    /* Have a more basic feature as a backup in case the newer feature is not supported */
+    background-color: blue;
+  }
+}
+/* There are several problems with the above code. First, the @supports query accomplishes nothing that a standard CSS cascade would not. Second, this code depends on not logic to determine if a feature is not supported. Additionally, if CSS feature queries are not supported, the nested ruleset will be ignored entirely. As a result, if the browser does not support the linear-gradient feature as well as the @supports at-rule, elements of the button class will not be styled at all. This can be fixed using CSS cascading: */
+
+.button {
+  /* The button will be blue by default */
+  background-color: blue;
+  /* linear-gradient will override the blue button if the feature is supported */
+  background: linear-gradient(red, white, blue);
+}
+/* Progressive Enhancement
+Progressive enhancement is the idea of working your way up to more sophisticated code if the browser supports it. We can think of this as a bottom-up approach. Consider the following code example that uses the object-fit property: */
+
+img {
+  position: absolute;
+  height: 50%;
+  width: 100%;  
+}
+ 
+@supports (object-fit: cover) {
+  img {
+    /* override previous settings if necessary */
+    position: static;
+    /* use newer features */
+    object-fit: cover;
+  }
+}
+/* In this example, if the object-fit property is supported, the ruleset inside the @supports at-rule will override the previous ruleset for the img selector. If the browser does not support feature queries, the first ruleset for the img selector will not be overridden. */
+
+@supports ((background: linear-gradient(red, white, blue)) or 
+          (background: -webkit-linear-gradient(red, white, blue)) or
+          (background: -moz-linear-gradient(red, white, blue)) or
+          (background: -ms-linear-gradient(red, white, blue)) or
+          (background: -o-linear-gradient(red, white, blue))) and 
+          (background-color: rgba(6, 1, 106, 0.4)) {
+  /* Set background to below linear gradient if the rgba() CSS function is supported */
+  body {
+    background: linear-gradient(90deg, rgba(6, 1, 106, 0.4) 0%, rgba(186, 255, 253, 1) 100%);
+  }
+}
