@@ -39,6 +39,8 @@ strong{
   background: url('../images/flowers.jpg');
   background-size: cover;
 	background-clip: text;
+  /* Set background-clip to text with approporate prefix for Chrome */
+  -webkit-background-clip: text;
 	color: transparent;
 }
 
