@@ -137,7 +137,6 @@ rect:before {
   display: inline-block;
   -webkit-transform: rotate(90deg);
   transform-origin: left top 0;
-  float: left;
 }
 rect:after {
   position: absolute;
